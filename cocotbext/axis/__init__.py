@@ -291,6 +291,7 @@ class AXIS_Monitor(BusMonitor):
                             recv_pkt["tid"] = int(tid)
                         if tdest:
                             recv_pkt["tdest"] = int(tdest)
+                        self._recv(recv_pkt)
                 else:
                     try:
                         if tdata:
